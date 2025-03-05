@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PublishAot>true</PublishAot>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+    <StartupObject>De.Thekid.INotify.Runner</StartupObject>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <ErrorReport>none</ErrorReport>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <Title>inotify-win</Title>
+    <Version>1.10.0.0</Version>
+    <Authors>Alexander Feuster (.NET 9 port) &amp; Timm Friebe (original port)</Authors>
+    <Description>A port of the inotifywait tool for Windows</Description>
+    <Copyright>© 2025 Alexander Feuster / © 2012 - 2023 Timm Friebe</Copyright>
+    <PackageProjectUrl>https://github.com/feuster/inotify-win</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/feuster/inotify-win</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

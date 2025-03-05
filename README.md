@@ -1,16 +1,20 @@
 inotify-win
 ===========
-A port of the **inotifywait** tool for Windows, see https://github.com/rvoicilas/inotify-tools
+
+This is a fork from the https://github.com/thekid/inotify-win port of the **InotifyWait** tool for Windows, see https://github.com/rvoicilas/inotify-tools
 
 Compiling
 =========
-If you have Cygwin installed, just run `make` in this directory. This will create the executable, `inotifywait.exe`.
 
-Manual complilation goes as follows:
+It is recommended to use Visual Studio 2022 for compiling. The Community Edition is sufficient.
+Open the solution and build or publish **InotifyWait**.
 
-```sh
-$ %WINDIR%\Microsoft.NET\Framework\v4.0.30319\csc.exe /o /t:exe /out:inotifywait.exe src\*.cs
+<!--
+Manual complilation can be done via cake build:
+
+```cakebuild.bat
 ```
+-->
 
 Usage
 =====
