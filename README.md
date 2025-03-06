@@ -10,7 +10,7 @@ Compiling
 It is recommended to use Visual Studio 2022 for compiling. The Community Edition is sufficient.
 Open the solution and build or publish **InotifyWait**.
 
-Manual compilation with additional packaging a Zip archive can be done as cake build by executing the following script and following the instructions:
+Manual compilation with additional packaging a Zip archive can be done as cake build by executing this script and following the instructions:
 
 ```
 CakeBuild.bat
