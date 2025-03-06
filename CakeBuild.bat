@@ -4,7 +4,7 @@ rem ============================================
 @echo off
 cd "%~dp0"
 set appname=InotifyWait
-set versiondefault=1.10.0.0
+set versiondefault=1.10.0.1
 
 rem ============================================
 rem DO NOT EDIT THE SECTION BEYOND THIS LINE!
