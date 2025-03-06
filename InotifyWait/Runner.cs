@@ -21,6 +21,7 @@ namespace De.Thekid.INotify
         private ManualResetEventSlim _stopMonitoringEvent;
         private object _notificationReactionLock = new object();
         private Arguments _args = null;
+        private bool Cancellation = false;
 
         static Runner()
         {
@@ -167,7 +168,8 @@ namespace De.Thekid.INotify
                     );
                 }
                 w.EnableRaisingEvents = true;
-                _stopMonitoringEvent.Wait();
+                if(!Cancellation)
+                    _stopMonitoringEvent.Wait();
             }
         }
 
@@ -189,7 +191,7 @@ namespace De.Thekid.INotify
 
                 foreach (var thread in _threads)
                 {
-                    if (thread.IsAlive) thread.Abort();
+                    if (thread.IsAlive) Cancellation = true;
                     thread.Join();
                 }
                 return 0;

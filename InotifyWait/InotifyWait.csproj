@@ -14,7 +14,7 @@
     <NeutralLanguage>en</NeutralLanguage>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <Title>inotify-win</Title>
-    <Version>1.10.0.0</Version>
+    <Version>1.10.0.1</Version>
     <Authors>Alexander Feuster (.NET 9 port) &amp; Timm Friebe (original port)</Authors>
     <Description>A port of the inotifywait tool for Windows</Description>
     <Copyright>© 2025 Alexander Feuster / © 2012 - 2023 Timm Friebe</Copyright>
@@ -24,11 +24,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DebugType>none</DebugType>
+    <DebugType>full</DebugType>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
 
   <ItemGroup>
