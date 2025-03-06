@@ -6,6 +6,7 @@ http://www.opensource.org/licenses/bsd-license.php
 
 This is the license's text:
 ```
+Copyright (c) 2025, Alexander Feuster
 Copyright (c) 2012-2024, Timm Friebe
 All rights reserved.
 
